@@ -1,17 +1,20 @@
 server:
-  port: 80
-
-
-spring:
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://${MYSQL_ADDRESS}/${MYSQL_DATABASE:springboot_demo}
-    username: ${MYSQL_USERNAME}
-    password: ${MySQL_PASSWORD}
-  mvc:
-    view:
-      suffix: .html
-      prefix: /
-
-mybatis:
-  mapper-locations: classpath*:mapper/*Mapper.xml
+  port: 8080
+  servlet:
+    encoding:
+      enabled: true
+      charset: UTF-8
+      force: true
+logging:
+  level:
+    org:
+      zalando:
+        logbook: trace
+logbook:
+  filter:
+    form-request-mode: off
+  format:
+    style: http
+chatgpt:
+  api-key: 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   #your api-key. It can be generated in this link https://beta.openai.com/docs/quickstart/adjust-your-settings
+  max-tokens: 1000
