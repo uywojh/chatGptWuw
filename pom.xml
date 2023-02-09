@@ -11,10 +11,9 @@
         <relativePath/>
     </parent>
 
-    <groupId>cc.vayne</groupId>
-    <artifactId>demo-chatgpt-spring-boot-starter</artifactId>
-    <version>1.0.0</version>
-
+    <groupId>cc.wuw</groupId>
+    <artifactId>chatGptWuw</artifactId>
+    <name>chatGptWuw</name>
     <properties>
         <java.version>1.8</java.version>
         <log4j2.version>2.17.1</log4j2.version>
